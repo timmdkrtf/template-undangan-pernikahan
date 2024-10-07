@@ -1,0 +1,1166 @@
+body{
+  overflow-x: hidden;
+}
+
+.home{
+  position: relative;
+}
+
+.home .img-bg img{
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(0.6);
+  top: 0;
+}
+
+.home .container{
+  z-index: 1;
+  position: relative;
+  color: #ffffff;
+}
+
+.home .container .text{
+  text-align: center;
+  padding: 200px 0;
+}
+
+.home .text-top{
+  font-family: "Alice", system-ui;
+}
+
+.home .text-top p{
+  font-size: 16px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.home .text-top h1{
+  font-size: 100px;
+  font-weight: 500;
+}
+
+.home .text-bottom{
+  font-family: "Mulish", system-ui;
+  margin: 70px 0 0 0;
+}
+
+.home .text-bottom h4{
+  font-size: 20px;
+  opacity: 0.8;
+  border: 1px solid #F8F0EC;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+
+.home .text-bottom a{
+  color: #ffffff;
+}
+
+.home .text-bottom svg{
+  font-size: 70px;
+  margin: 140px 0 0 -38px;
+  position: absolute;
+  animation: svgMove 1s ease-in-out infinite alternate;
+  color: #F8F0EC;
+  opacity: 0.8;
+}
+
+@keyframes svgMove {
+  from {margin-top: 140px;}
+  to {margin-top: 130px;}
+}
+
+.quote{
+  padding: 130px 0 90px 0;
+  margin: 50px;
+}
+
+.quote .content{
+  border: 1px solid #C78665;
+  width: 80%;
+  margin: 0 auto;
+  padding: 70px 100px 50px 100px;
+  position: relative;
+}
+
+.quote .content::before{
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 30%;
+  background-image: url('../src/assets/image/elemen/line-open-book.png');
+  background-color: #ffffff;
+  height: 70px;
+  width: 40%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.quote .content::after{
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 140px;
+  background-color: #F8F0EC;
+  border-bottom: 1px solid #C78665;
+  border-right: 1px solid #C78665;
+  right: -50px;
+  margin: -40px 0 0 0;
+  z-index: -1;
+}
+
+.quote .content h2{
+  font-family: "Alice", system-ui;
+  text-align: center;
+  font-weight: 300;
+  font-size: 34px;
+}
+
+.quote .content p{
+  font-family: "Mulish", system-ui;
+  margin: 50px 0 0 auto;
+  font-weight: 400;
+  font-size: 17px;
+  position: relative;
+  width: fit-content;
+  z-index: 2;
+}
+
+.quote .content p::before{
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #C78665;
+  top: 50%;
+  left: -40px;
+  border-radius: 3px;
+}
+
+.story{
+  padding: 100px 0;
+}
+
+.story .title{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.story .title img{
+  width: 40px;
+  margin: 0 0 -10px 0;
+  opacity: 0.7;
+}
+
+.story .title h1{
+  font-family: "Alice", system-ui;
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.story .title p{
+  font-family: "Mulish", system-ui;
+  opacity: 0.8;
+}
+
+.story .content-story{
+  display: flex;
+  flex-direction: column;
+  margin: 80px auto 0 auto;
+  gap: 100px;
+  width: 80%;
+}
+
+.story .content-story .story-card{
+  display: flex;
+  gap: 40px;
+  position: relative;
+}
+
+.story .content-story .story-card.second{
+  flex-direction: row-reverse;
+}
+
+.story .content-story .story-card .text{
+  width: 50%;
+}
+
+.story .content-story .story-card.second .text{
+  text-align: end;
+}
+
+.story .content-story .story-card img{
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.story .content-story .story-card h2{
+  font-family: "Alice", system-ui;
+  color: #C78665;
+  font-weight: 500;
+}
+
+.story .content-story .story-card p{
+  font-family: "Mulish", system-ui;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.story .content-story .story-card .text img{
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+}
+
+.story .content-story .story-card.second .text img{
+  left: 0;
+  bottom: 0;
+}
+
+.event{
+  margin: 140px 0;
+  padding: 50px 0;
+  position: relative;
+}
+
+.event::after{
+  content: "";
+  position: absolute;
+  background-image: url('../src/assets/image/elemen/flower-big2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 70%;
+  height: 90%;
+  top: 100px;
+  left: 25%;
+  z-index: -1;
+  opacity: 0.03;
+}
+
+.event .title{
+  font-family: "Alice", system-ui;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+}
+
+.event .title img{
+  position: absolute;
+  width: 50px;
+  left: 47%;
+  margin: -40px 0 0 0;
+}
+
+.event .title h1{
+  background-color: #ffffff;
+  padding: 10px;
+  display: inline-block;
+}
+
+.event .title::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #C78665;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  border-radius: 2px;
+}
+
+.event .content-event{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px 40px;
+  margin: 40px 0;
+  justify-content: center;
+}
+
+.event .content-event .card-content{
+  width: calc(32% - 15px);
+  text-align: center;
+}
+
+.event .content-event .card-content img{
+  width: 65px;
+  background-color: #F8F0EC;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.event .content-event .card-content h4{
+  font-family: "Alice", system-ui;
+  margin: 15px 0;
+}
+
+.event .content-event .card-content p{
+  font-family: "Mulish", system-ui;
+  opacity: 0.7;
+  position: relative;
+  display: inline-block;
+}
+
+.event .content-event .card-content p::after{
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 1px;
+  background-color: #C78665;
+  bottom: -40px;
+  right: 35%;
+}
+
+.schedule{
+  margin: 200px 0 100px 0;
+  padding: 50px 0;
+  position: relative;
+  height: 400px;
+  background-image: url('../src/assets/image/bg/2.png');
+  background-size: cover;
+}
+
+.schedule .content-schedule{
+  display: flex;
+  margin: auto 0;
+  height: 300px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.schedule .content-schedule .text-left{
+  width: 45%;
+  color: #ffffff;
+}
+
+.schedule .content-schedule .text-left h1{
+  font-family: "Alice", system-ui;
+  font-size: 50px;
+}
+
+.schedule .content-schedule .text-left p{
+  font-family: "Mulish", system-ui;
+  margin: 15px 0 0 0;
+  opacity: 0.9;
+}
+
+.schedule .content-schedule .cover-right{
+  width: 45%;
+}
+
+.schedule .content-schedule .cover-right .cover{
+  margin: 0 auto;
+  width: 85%;
+  height: 550px;
+  border: 3px solid white;
+  box-shadow: 0 0 0 3px #C78665, 0 5px 30px -5px #edc1ac;
+  background-image: url('../src/assets/image/bg/bg-cover2.jfif');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  position: relative;
+  z-index: 5;
+  padding: 30px;
+}
+
+.schedule .content-schedule .cover-right .cover::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  opacity: 0.4;
+  z-index: 6;
+}
+
+.schedule .cover-right .cover .head{
+  z-index: 10;
+  position: relative;
+}
+
+.schedule .cover-right .cover .head .mempelai{
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+  font-size: 70px;
+  line-height: 65px;
+  margin: 60px 0 0 0;
+}
+
+.schedule .cover-right .cover .body{
+  z-index: 10;
+  position: relative;
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+
+.schedule .cover-right .cover .body .date h2{
+  font-family: "Mulish", system-ui;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.schedule .cover-right .cover .body .date h2 .highlight{
+  border-left: 2px solid #C78665;
+  border-right: 2px solid #C78665;
+  font-size: 30px;
+  padding: 0 10px;
+  font-weight: 700;
+}
+
+.schedule .cover-right .cover .body .adress a button{
+  border: 1px solid #C78665;
+  font-family: "Mulish", system-ui;
+  padding: 6px 22px;
+  background-color: transparent;
+  margin: 30px 0 0 0;
+  transition: 0.3s;
+}
+
+.schedule .cover-right .cover .body .adress a button:hover{
+  background-color: #C78665;
+  color: #ffffff;
+}
+
+.gallery{
+  margin: 100px 0;
+  padding: 100px 0;
+  position: relative;
+}
+
+.gallery::after{
+  content: "";
+  position: absolute;
+  background-image: url("../src/assets/image/elemen/flower-big1.png");
+  background-size: contain;
+  width: 800px;
+  height: 800px;
+  bottom: -80px;
+  right: 0;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.gallery .content-gallery{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery .content-gallery img{
+  width: calc(33% - 10px);
+  height: 300px;
+  object-fit: cover;
+}
+
+
+.gift{
+  background-color: #C78665;
+  padding: 80px 0 50px 0;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+
+.gift .title h1{
+  font-family: "Alice", system-ui;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.gift .title p{
+  font-family: "Mulish", system-ui;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.gift .gift-content{
+  display: flex;
+  margin: 80px 0;
+  justify-content: center;
+  gap: 30px;
+}
+
+.gift .gift-content .qr{
+  width: 30%;
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 15px;
+}
+
+.gift .gift-content .qr h5{
+  font-family: "Mulish", system-ui;
+  color: #000000;
+}
+
+.gift .gift-content .qr img{
+  width: 150px;
+}
+
+.gift .family{
+  margin: 40px 0 0 0;
+}
+
+.gift .family p{
+  font-family: "Mulish", system-ui;
+}
+
+.gift .family h2{
+  font-family: "Alice", system-ui;
+}
+
+.gift .leaf-img .left{
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  left: 0;
+}
+
+.gift .leaf-img .right{
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .quote .content{
+    width: 90%;
+    padding: 70px 80px 50px 80px;
+  }
+
+  .quote .content::before{
+    top: -38px;
+  }
+
+  .event::after{
+    width: 70%;
+    height: 80%;
+    top: 120px;
+    left: 15%;
+  }
+
+  .schedule .content-schedule .text-left{
+    width: 48%;
+    color: #ffffff;
+  }
+
+  .schedule .content-schedule .text-left h1{
+    font-family: "Alice", system-ui;
+    font-size: 43px;
+  }
+
+  .schedule .content-schedule .cover-right .cover{
+    width: 100%;
+  }
+
+  .gallery .content-gallery img{
+    width: calc(33% - 15px);
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .gift .family h2{
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .quote .content::before{
+    top: -32px;
+  }
+
+  .quote .content{
+    width: 100%;
+    padding: 70px 60px 50px 60px;
+  }
+
+  .quote .content h2{
+    font-family: "Alice", system-ui;
+    text-align: center;
+    font-weight: 300;
+    font-size: 32px;
+  }
+
+  .story .title{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .story .content-story{
+    width: 100%;
+  }
+
+  .event .content-event{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px 34px;
+    margin: 40px 0;
+    justify-content: center;
+  }
+
+  .event .content-event .card-content{
+    width: calc(30%);
+    text-align: center;
+  }
+
+  .event .content-event{
+    margin: 50px 0;
+  }
+
+  .schedule{
+    margin: 200px 0 400px 0;
+  }
+
+  .schedule .content-schedule{
+    align-items: start;
+    flex-direction: column;
+    gap: 80px;
+    height: auto;
+  }
+
+  .schedule .content-schedule .text-left{
+    width: 80%;
+    color: #ffffff;
+  }
+
+  .schedule .content-schedule .text-left h1{
+    font-family: "Alice", system-ui;
+    font-size: 50px;
+  }
+
+  .schedule .content-schedule .cover-right{
+    width: 60%;
+    margin: 0 0 0 auto;
+  }
+
+  .gallery .content-gallery img{
+    width: calc(33% - 15px);
+    height: 240px;
+    object-fit: cover;
+  }
+
+  .gift .leaf-img .left{
+    width: 150px;
+  }
+  
+  .gift .leaf-img .right{
+    width: 150px;
+  }
+
+  .gift .title p{
+    width: 90%;
+  }
+
+  .gift .gift-content .qr{
+    width: 40%;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 15px;
+  }
+
+  .gift .family h2{
+    font-size: 26px;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  .home .text-top p{
+    font-size: 14px;
+  }
+
+  .home .text-top h1{
+    font-size: 80px;
+  }
+
+  .home .text-bottom h4{
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+
+  .home .text-bottom svg{
+    font-size: 60px;
+    margin: 170px 0 0 -38px;
+    animation: svgMove 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes svgMove {
+    from {margin-top: 170px;}
+    to {margin-top: 160px;}
+  }
+
+  .quote{
+    margin: 50px 0;
+  }
+
+  .quote .content{
+    width: 100%;
+    padding: 60px 30px 30px 30px;
+  }
+
+  .quote .content::before{
+    top: -28px;
+    width: 50%;
+    left: 25%;
+  }
+
+  .quote .content::after{
+    width: 60%;
+    height: 120px;
+    border-right: none;
+    border-bottom: 1px solid #C78665;
+    right: 20%;
+  }
+
+  .quote .content h2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 30px;
+  }
+
+  .quote .content p{
+    margin: 50px auto 0 auto;
+    font-weight: 400;
+    font-size: 17px;
+  }
+
+  .quote .content p::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #C78665;
+    top: 50%;
+    right: -40px;
+    border-radius: 3px;
+  }
+
+  .story .content-story .story-card{
+    gap: 20px;
+  }
+
+  .story .content-story .story-card img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .story .content-story .story-card .text img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+  }
+
+  .event .content-event{
+    gap: 80px 50px;
+  }
+
+  .event .content-event .card-content{
+    width: calc(45%);
+    text-align: center;
+  }
+
+  .event::after{
+    width: 70%;
+    height: 85%;
+    top: 150px;
+    left: 15%;
+    background-repeat: repeat;
+  }
+
+  .schedule .content-schedule .text-left{
+    width: 100%;
+    color: #ffffff;
+  }
+
+  .schedule .content-schedule .text-left h1{
+    font-family: "Alice", system-ui;
+    font-size: 50px;
+  }
+
+  .schedule .content-schedule .cover-right{
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .gallery .content-gallery img{
+    width: calc(33% - 15px);
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .gift .title p{
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .gift .gift-content{
+    display: flex;
+    margin: 60px 0 120px 0;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .gift .gift-content .qr{
+    width: 48%;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 15px;
+  }
+
+  .gift .leaf-img .left{
+    width: 100px;
+  }
+  
+  .gift .leaf-img .right{
+    width: 100px;
+  }
+
+  .gift .family h2{
+    font-size: 26px;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .home .container .text{
+    text-align: center;
+    padding: 130px 0;
+  }
+
+  .home .text-top h1{
+    font-size: 100px;
+  }
+
+  .home .text-bottom svg{
+    font-size: 60px;
+    margin: 120px 0 0 -38px;
+    position: absolute;
+    animation: svgMove 1s ease-in-out infinite alternate;
+    color: #F8F0EC;
+    opacity: 0.8;
+  }
+
+  @keyframes svgMove {
+    from {margin-top: 120px;}
+    to {margin-top: 110px;}
+  }
+
+  .quote .content{
+    width: 100%;
+    padding: 60px 15px 30px 15px;
+  }
+
+  .quote .content::before{
+    top: -30px;
+    width: 70%;
+    left: 15%;
+  }
+
+  .quote .content::after{
+    width: 65%;
+    height: 100px;
+    border-right: none;
+    border-bottom: 1px solid #C78665;
+    right: 18%;
+  }
+
+  .quote .content h2{
+    font-family: "Alice", system-ui;
+    text-align: center;
+    font-weight: 300;
+    font-size: 22px;
+  }
+
+  .quote .content p{
+    font-size: 14px;
+  }
+
+  .story .content-story{
+    width: 80%;
+    margin: 50px auto;
+  }
+
+  .story .content-story .story-card{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .story .content-story .story-card.second{
+    flex-direction: column;
+  }
+
+  .story .content-story .story-card img{
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  .story .content-story .story-card .text{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .story .content-story .story-card.second .text{
+    text-align: left;
+  }
+
+  .story .content-story .story-card.second .text img{
+    left: auto;
+    right: 0;
+    bottom: 0;
+    bottom: -50px;
+  }
+
+  .story .content-story .story-card p{
+    font-family: "Mulish", system-ui;
+    font-size: 13px;
+    opacity: 0.8;
+  }
+
+  .story .content-story .story-card .text img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    opacity: 0.5;
+  }
+
+  .event .content-event{
+    gap: 100px 40px;
+  }
+
+  .event .content-event .card-content{
+    width: calc(70%);
+    text-align: center;
+  }
+
+  .event::after{
+    width: 80%;
+    height: 90%;
+    top: 150px;
+    left: 15%;
+    background-repeat: repeat;
+  }
+
+  .schedule .content-schedule .text-left h1{
+    font-family: "Alice", system-ui;
+    font-size: 35px;
+  }
+
+  .schedule .content-schedule .text-left p{
+    font-size: 13px;
+    width: 80%;
+  }
+
+  .schedule .content-schedule .cover-right{
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .gift .gift-content .qr{
+    width: 80%;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 15px;
+  }
+
+  .gallery .content-gallery img{
+    width: calc(50% - 10px);
+    height:200px;
+    object-fit: cover;
+  }
+
+  .gift .gift-content{
+    display: flex;
+    flex-direction: column;
+    margin: 60px auto 60px auto;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .gift .family h2{
+    font-size: 24px;
+    width: 90%;
+    margin: 0 auto 120px auto;
+  }
+}
+
+@media screen and (max-width: 380px) {
+
+  .home .container .text{
+    text-align: center;
+    padding: 70px 0;
+  }
+
+  .home .text-top h1{
+    font-size: 100px;
+    width: 85%;
+    margin: 0 auto;
+    line-height: 100px;
+  }
+
+  .quote .content{
+    width: 100%;
+    padding: 60px 10px 30px 10px;
+  }
+
+  .quote .content::before{
+    top: -30px;
+    width: 90%;
+    left: 5%;
+  }
+
+  .quote .content h2{
+    font-family: "Alice", system-ui;
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  .quote .content p{
+    font-size: 12px;
+  }
+
+  .quote .content p::before{
+    width: 15px;
+    height: 2px;
+    left: -25px;
+  }
+
+  .quote .content p::after{
+    width: 15px;
+    height: 2px;
+    right: -25px;
+  }
+
+  .story .title{
+    width: 100%;
+  }
+
+  .story .title p{
+    font-size: 14px;
+  }
+
+  .story .content-story{
+    width: 100%;
+    margin: 50px auto;
+  }
+
+  .story .content-story .story-card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  .story .content-story .story-card .text{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .event .title h1{
+    background-color: #ffffff;
+    padding: 10px;
+    display: inline-block;
+    font-size: 22px;
+  }
+
+  .event .title img{
+    position: absolute;
+    width: 40px;
+    left: 43%;
+    margin: -40px 0 0 0;
+  }
+
+  .event .title::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #C78665;
+    top: 45%;
+    left: 0;
+    z-index: -1;
+    border-radius: 2px;
+  }
+
+  .event .content-event .card-content{
+    width: 100%;
+    text-align: center;
+  }
+
+  .schedule .content-schedule .text-left h1{
+    font-family: "Alice", system-ui;
+    font-size: 32px;
+  }
+
+  .schedule .content-schedule .text-left p{
+    font-size: 13px;
+    width: 80%;
+  }
+
+  .schedule .content-schedule .cover-right{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .schedule .content-schedule .cover-right .cover{
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    border: 3px solid white;
+    box-shadow: 0 0 0 3px #C78665, 0 5px 30px -5px #edc1ac;
+    background-image: url('../src/assets/image/bg/bg-cover2.jfif');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+    padding: 30px;
+  }
+
+  .gallery .content-gallery img{
+    width: 100%;
+    height:220px;
+    object-fit: cover;
+  }
+}
