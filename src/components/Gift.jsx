@@ -1,4 +1,4 @@
-import QRCode from  "../assets/image/icon/Qr-code.png"
+import QRCode from  "../assets/image/icon/Qr-Code.png"
 
 import LeafLeft from "../assets/image/elemen/leaf-tall-white-left.png"
 import LeafRight from "../assets/image/elemen/leaf-tall-white-right.png"
